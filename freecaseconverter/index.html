@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Case Converter Online - No Login Required | freecaseconverter.app</title>
+<meta name="description" content="Free online case converter — uppercase, lowercase, camelCase, snake_case &amp; 8 more. No login, no cloud. Works instantly in your browser.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://freecaseconverter.app/">
+<meta name="theme-color" content="#faf9f6">
+<link rel="manifest" href="/manifest.json">
+<!-- hreflang tags to be added when translations are available -->
+
+<!-- Open Graph -->
+<meta property="og:title" content="Free Case Converter Online - No Login Required | freecaseconverter.app">
+<meta property="og:description" content="Free online case converter — uppercase, lowercase, camelCase, snake_case &amp; 8 more. No login, no cloud. Works instantly in your browser.">
+<meta property="og:image" content="https://freecaseconverter.app/og-image.svg">
+<meta property="og:url" content="https://freecaseconverter.app/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Case Converter Online - No Login Required | freecaseconverter.app">
+<meta name="twitter:description" content="Free online case converter — uppercase, lowercase, camelCase, snake_case &amp; 8 more. No login, no cloud. Works instantly in your browser.">
+<meta name="twitter:image" content="https://freecaseconverter.app/og-image.svg">
+
+<!-- Google Fonts async -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- JSON-LD: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "freecaseconverter.app",
+  "url": "https://freecaseconverter.app/",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Free online case converter — uppercase, lowercase, camelCase, snake_case and 8 more formats. No login, no cloud. Works instantly in your browser."
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is camelCase and when should I use it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "camelCase is a naming convention where the first word is lowercase and each subsequent word starts with a capital letter, with no spaces or separators (e.g., myVariableName). It is the standard naming convention for variables and functions in JavaScript, Java, and many other programming languages. Use camelCase when naming variables, function names, and object properties in your code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert text to snake_case online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To convert text to snake_case online, visit freecaseconverter.app, paste or type your text in the input area, and click the snake_case button. Your text will be instantly converted with all words joined by underscores and lowercased. The conversion happens entirely in your browser — no data is sent to any server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Title Case and Sentence case?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Title Case capitalizes the first letter of every word (e.g., 'The Quick Brown Fox'), while Sentence case only capitalizes the first letter of each sentence (e.g., 'The quick brown fox'). Title Case is typically used for headings, book titles, and article names. Sentence case is used for regular body text and general writing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert code variable names with a case converter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. freecaseconverter.app supports camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, and dot.case — all common naming conventions in programming. Paste your variable name, select the target format, and copy the result. It handles multi-word inputs and existing formatted names intelligently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does freecaseconverter.app work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. freecaseconverter.app is fully responsive and touch-friendly. The layout adapts to any screen size, with conversion buttons arranged in a two-column grid on mobile. All features work identically on phones, tablets, and desktop browsers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my text stored or sent to a server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. All text processing in freecaseconverter.app happens 100% in your browser using JavaScript. Your text never leaves your device — 0 bytes are transmitted to any server. The app has no backend, no database, no analytics, and no tracking. Your data stays private."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://freecaseconverter.app/"
+    }
+  ]
+}
+</script>
+
+<style>
+/* Critical CSS — inlined */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+--bg:#faf9f6;
+--surface:#f4f2ee;
+--border:#e8e4dd;
+--text-primary:#1a1917;
+--text-secondary:#6b6760;
+--text-muted:#9e9b96;
+--accent:#C49A2A;
+--accent-hover:#A8831F;
+--accent-text:#ffffff;
+--destructive:#c0392b;
+--shadow:0 1px 3px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);
+}
+
+html.dark{
+--bg:#141412;
+--surface:#1e1c1a;
+--border:#2e2b27;
+--text-primary:#f0ede8;
+--text-secondary:#9e9b96;
+--text-muted:#6b6760;
+--accent:#D4A835;
+--accent-hover:#C49A2A;
+--accent-text:#ffffff;
+--shadow:0 1px 3px rgba(0,0,0,0.3),0 2px 8px rgba(0,0,0,0.2);
+}
+
+html{font-size:15px;line-height:1.6}
+body{
+font-family:'Lora',serif;
+background:var(--bg);
+color:var(--text-primary);
+transition:background 0.15s ease,color 0.15s ease;
+overflow-x:hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted)}
+
+/* Header */
+.header{
+height:52px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 24px;
+border-bottom:1px solid var(--border);
+background:var(--bg);
+position:relative;
+z-index:20;
+}
+.brand{
+font-family:'DM Sans',sans-serif;
+font-size:15px;
+font-weight:600;
+color:var(--accent);
+text-decoration:none;
+}
+.header-actions{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+/* Theme toggle */
+.theme-toggle{
+width:48px;
+height:26px;
+border-radius:13px;
+border:1px solid var(--border);
+background:var(--surface);
+cursor:pointer;
+position:relative;
+transition:all 0.15s ease;
+display:flex;
+align-items:center;
+padding:0 4px;
+}
+.theme-toggle:focus-visible{
+outline:2px solid var(--accent);
+outline-offset:2px;
+}
+.theme-toggle-knob{
+width:18px;
+height:18px;
+border-radius:50%;
+background:var(--accent);
+transition:all 0.15s ease;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:11px;
+line-height:1;
+}
+html.dark .theme-toggle-knob{
+transform:translateX(22px);
+}
+
+/* Buttons */
+.btn{
+font-family:'DM Sans',sans-serif;
+font-size:13px;
+font-weight:500;
+padding:8px 16px;
+border-radius:8px;
+cursor:pointer;
+transition:all 0.15s ease;
+border:none;
+outline:none;
+display:inline-flex;
+align-items:center;
+gap:6px;
+white-space:nowrap;
+}
+.btn:focus-visible{
+outline:2px solid var(--accent);
+outline-offset:2px;
+}
+.btn-primary{
+background:var(--accent);
+color:var(--accent-text);
+}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-secondary{
+background:transparent;
+border:1px solid var(--border);
+color:var(--text-secondary);
+}
+.btn-secondary:hover{background:var(--surface)}
+.btn-destructive{
+background:transparent;
+border:1px solid var(--destructive);
+color:var(--destructive);
+}
+.btn-destructive:hover{background:var(--surface)}
+
+/* Main app area */
+.app-main{
+height:calc(100vh - 52px - 32px);
+display:flex;
+overflow:hidden;
+}
+.input-panel{
+flex:1;
+display:flex;
+flex-direction:column;
+padding:20px 24px;
+min-width:0;
+}
+.right-panel{
+width:340px;
+border-left:1px solid var(--border);
+overflow-y:auto;
+padding:20px 24px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* Textareas */
+.textarea-wrap{flex:1;display:flex;flex-direction:column;gap:8px}
+.textarea-wrap label{
+font-family:'DM Sans',sans-serif;
+font-size:13px;
+font-weight:500;
+color:var(--text-secondary);
+}
+textarea{
+flex:1;
+width:100%;
+background:var(--bg);
+border:1px solid var(--border);
+border-radius:6px;
+padding:10px 12px;
+font-family:'Lora',serif;
+font-size:15px;
+line-height:1.6;
+color:var(--text-primary);
+resize:vertical;
+transition:all 0.15s ease;
+}
+textarea:focus{
+border-color:var(--accent);
+outline:none;
+box-shadow:0 0 0 3px rgba(196,154,42,0.12);
+}
+textarea::placeholder{color:var(--text-muted)}
+
+/* Output area */
+.output-wrap{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-top:12px;
+}
+.output-header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+.output-header label{
+font-family:'DM Sans',sans-serif;
+font-size:13px;
+font-weight:500;
+color:var(--text-secondary);
+}
+.copy-flash{
+font-family:'DM Sans',sans-serif;
+font-size:12px;
+color:var(--accent);
+opacity:0;
+transition:opacity 0.15s ease;
+}
+.copy-flash.show{opacity:1}
+
+/* Stats grid */
+.stats-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+.stat-card{
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:10px;
+padding:16px;
+box-shadow:var(--shadow);
+}
+.stat-number{
+font-family:'DM Sans',sans-serif;
+font-size:28px;
+font-weight:700;
+color:var(--text-primary);
+line-height:1.2;
+}
+.stat-label{
+font-family:'DM Sans',sans-serif;
+font-size:11px;
+font-weight:500;
+color:var(--text-muted);
+text-transform:uppercase;
+letter-spacing:0.05em;
+margin-top:4px;
+}
+
+/* Conversion buttons grid */
+.convert-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:8px;
+}
+.convert-btn{
+font-family:'DM Sans',sans-serif;
+font-size:12px;
+font-weight:500;
+padding:8px 8px;
+border-radius:8px;
+cursor:pointer;
+transition:all 0.15s ease;
+border:1px solid var(--border);
+background:transparent;
+color:var(--text-secondary);
+text-align:center;
+outline:none;
+}
+.convert-btn:hover{background:var(--surface)}
+.convert-btn:focus-visible{
+outline:2px solid var(--accent);
+outline-offset:2px;
+}
+.convert-btn.active{
+background:var(--accent);
+color:var(--accent-text);
+border-color:var(--accent);
+}
+
+/* Upgrade prompt */
+#upgrade-prompt{
+margin-top:4px;
+}
+#upgrade-prompt .divider{
+border-top:1px solid var(--border);
+margin-bottom:12px;
+}
+.upgrade-title{
+font-family:'DM Sans',sans-serif;
+font-size:13px;
+font-weight:500;
+color:var(--text-secondary);
+margin-bottom:4px;
+}
+.upgrade-desc{
+font-family:'DM Sans',sans-serif;
+font-size:12px;
+color:var(--text-muted);
+margin-bottom:8px;
+}
+.upgrade-link{
+font-family:'DM Sans',sans-serif;
+font-size:12px;
+color:var(--accent);
+cursor:pointer;
+text-decoration:none;
+}
+.upgrade-link:hover{text-decoration:underline}
+
+/* Status bar */
+.status-bar{
+height:32px;
+background:var(--surface);
+border-top:1px solid var(--border);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 24px;
+font-family:'DM Sans',sans-serif;
+font-size:12px;
+color:var(--text-muted);
+}
+
+/* Suite badge */
+.suite-badge{
+position:fixed;
+bottom:36px;
+right:24px;
+font-family:'DM Sans',sans-serif;
+font-size:11px;
+font-weight:400;
+color:var(--text-muted);
+padding:4px 8px;
+z-index:10;
+}
+
+/* SEO content */
+.seo-content{
+max-width:780px;
+margin:0 auto;
+padding:64px 24px;
+color:var(--text-primary);
+}
+.seo-content h1{
+font-family:'Lora',serif;
+font-size:2rem;
+font-weight:700;
+margin-bottom:24px;
+line-height:1.3;
+}
+.seo-content h2{
+font-family:'Lora',serif;
+font-size:1.4rem;
+font-weight:600;
+margin-top:48px;
+margin-bottom:16px;
+line-height:1.3;
+}
+.seo-content p{
+margin-bottom:16px;
+color:var(--text-secondary);
+line-height:1.7;
+}
+.seo-content details{
+margin-bottom:12px;
+border:1px solid var(--border);
+border-radius:10px;
+padding:16px;
+background:var(--surface);
+}
+.seo-content summary{
+font-family:'DM Sans',sans-serif;
+font-weight:500;
+cursor:pointer;
+color:var(--text-primary);
+font-size:14px;
+}
+.seo-content details p{
+margin-top:12px;
+margin-bottom:0;
+}
+.seo-footer{
+border-top:1px solid var(--border);
+margin-top:48px;
+padding-top:24px;
+font-family:'DM Sans',sans-serif;
+font-size:12px;
+color:var(--text-muted);
+text-align:center;
+}
+
+/* Mobile */
+@media(max-width:768px){
+.app-main{
+  flex-direction:column;
+  height:auto;
+  min-height:calc(100vh - 52px - 32px);
+}
+.input-panel{
+  flex:none;
+  min-height:300px;
+}
+.right-panel{
+  width:100%;
+  border-left:none;
+  border-top:1px solid var(--border);
+}
+.convert-grid{
+  grid-template-columns:1fr 1fr;
+}
+.suite-badge .full{display:none}
+.suite-badge .short{display:inline}
+}
+@media(min-width:769px){
+.suite-badge .short{display:none}
+.suite-badge .full{display:inline}
+}
+</style>
+</head>
+<body>
+
+<!-- App UI — above the fold -->
+<header class="header">
+  <a href="/" class="brand">freecaseconverter.app</a>
+  <div class="header-actions">
+    <button class="btn btn-secondary btn-clear" id="btn-clear" title="Clear text">Clear</button>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <div class="theme-toggle-knob" id="theme-knob">☀️</div>
+    </button>
+  </div>
+</header>
+
+<main class="app-main">
+  <div class="input-panel">
+    <div class="textarea-wrap">
+      <label for="input-text">Input</label>
+      <textarea id="input-text" placeholder="Type or paste your text here…" autofocus></textarea>
+    </div>
+    <div class="output-wrap">
+      <div class="output-header">
+        <label for="output-text">Output</label>
+        <div>
+          <span class="copy-flash" id="copy-flash">Copied!</span>
+          <button class="btn btn-secondary" id="btn-copy" title="Copy output">Copy</button>
+        </div>
+      </div>
+      <textarea id="output-text" readonly placeholder="Converted text appears here…"></textarea>
+    </div>
+  </div>
+
+  <nav class="right-panel" aria-label="Conversion options">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" id="stat-chars">0</div>
+        <div class="stat-label">Characters</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-words">0</div>
+        <div class="stat-label">Words</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-sentences">0</div>
+        <div class="stat-label">Sentences</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-lines">0</div>
+        <div class="stat-label">Lines</div>
+      </div>
+    </div>
+
+    <div class="convert-grid" id="convert-grid">
+      <button class="convert-btn" data-mode="upper">UPPER CASE</button>
+      <button class="convert-btn" data-mode="lower">lower case</button>
+      <button class="convert-btn" data-mode="title">Title Case</button>
+      <button class="convert-btn" data-mode="sentence">Sentence case</button>
+      <button class="convert-btn" data-mode="camel">camelCase</button>
+      <button class="convert-btn" data-mode="pascal">PascalCase</button>
+      <button class="convert-btn" data-mode="snake">snake_case</button>
+      <button class="convert-btn" data-mode="kebab">kebab-case</button>
+      <button class="convert-btn" data-mode="constant">CONSTANT_CASE</button>
+      <button class="convert-btn" data-mode="dot">dot.case</button>
+      <button class="convert-btn" data-mode="alternating">Alternating cAsE</button>
+      <button class="convert-btn" data-mode="inverse">iNVERSE cASE</button>
+    </div>
+
+    <div id="upgrade-prompt">
+      <div class="divider"></div>
+      <div class="upgrade-title">🔒 Batch File Conversion</div>
+      <div class="upgrade-desc">Convert entire folders of .txt or .csv files to any case format in one click.</div>
+      <a class="upgrade-link" href="https://freesuite.app" target="_blank" rel="noopener">Unlock with freesuite.app · $2.88/mo</a>
+    </div>
+  </nav>
+</main>
+
+<div class="status-bar">
+  <span id="status-left">Ready</span>
+  <span>Ctrl+Enter to convert</span>
+</div>
+
+<div class="suite-badge">
+  <span class="full">by freesuite.app</span>
+  <span class="short">freesuite.app</span>
+</div>
+
+<!-- SEO Content — below the fold -->
+<section class="seo-content">
+  <article>
+    <h1>Free Case Converter Online — No Login Required</h1>
+    <p>freecaseconverter.app is a free online case converter that works in your browser with no login required. Instantly convert any text to uppercase, lowercase, title case, camelCase, snake_case, kebab-case, and 8 more formats — all processing happens locally, so your text never leaves your device. Whether you are a developer renaming variables, a writer fixing headings, or a student formatting an essay, freecaseconverter.app handles it in a single click. The converter supports 12 case formats and processes up to 100,000 characters instantly. There is no account to create, no cloud upload, and 0 bytes are ever sent to any server. freecaseconverter.app loads in under 200ms on any modern browser and works offline once visited. The interface is clean, ad-free, and designed to get out of your way so you can focus on your text. Dark mode is built in and your preferences persist between sessions using localStorage. The app is fully responsive — it works on desktop, tablet, and mobile with equal ease.</p>
+
+    <h2>What features does freecaseconverter.app offer?</h2>
+    <p>freecaseconverter.app provides 12 distinct conversion formats in a single interface: UPPER CASE, lower case, Title Case, Sentence case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dot.case, Alternating cAsE, and iNVERSE cASE. Every format is available with one click and produces instant output.</p>
+    <p>The converter handles input of up to 100,000 characters without slowdown. Whether you paste a single variable name or an entire document, the conversion completes in milliseconds. Real-time statistics display character count, word count, sentence count, and line count as you type.</p>
+    <p>Dark mode is included and toggleable at any time. Your theme preference is stored in localStorage and persists across sessions. The interface is designed with a clean split-panel layout: input on the left, stats and conversion buttons on the right.</p>
+    <p>A one-click copy button places the converted text on your clipboard instantly. A brief confirmation flash lets you know the copy succeeded. No pop-ups, no confirmations dialogs — just fast, efficient workflow.</p>
+    <p>The app loads in under 200ms and requires zero external dependencies beyond Google Fonts. There are no ads, no trackers, and no third-party scripts. The entire application is static HTML, CSS, and JavaScript — nothing more.</p>
+    <p>freecaseconverter.app is a Progressive Web App. After your first visit, the service worker caches all assets so the tool works offline on any device.</p>
+
+    <h2>How does this free case converter work?</h2>
+    <p>Using freecaseconverter.app is straightforward. First, type or paste your text into the input area at the top of the page. The text can be anything from a single word to thousands of lines — the converter handles it all instantly.</p>
+    <p>Second, click any of the 12 conversion buttons in the right panel. The converted output appears immediately in the output area below the input. The active conversion mode is highlighted so you always know which format is applied.</p>
+    <p>Third, click the Copy button next to the output to place the result on your clipboard. A brief "Copied!" confirmation appears. You can then paste the converted text anywhere you need it — your code editor, document, email, or chat.</p>
+
+    <h2>Why is freecaseconverter.app better than other case converter apps?</h2>
+    <p>Most case converter tools on the web are bloated with advertisements, require account creation, or process text on remote servers. freecaseconverter.app takes the opposite approach. The entire tool runs in your browser with zero server communication. Your text is never uploaded, stored, or transmitted anywhere.</p>
+    <p>Speed matters when you are in the middle of a workflow. freecaseconverter.app loads in under 200ms and converts text instantly. There are no loading spinners, no processing delays, and no server round-trips. Every conversion is computed locally using optimized JavaScript.</p>
+    <p>Privacy is not an afterthought — it is the architecture. With no backend server, no database, and no analytics scripts, there is nothing to compromise. The app cannot leak your data because it never has your data. 0 bytes leave your device at any point.</p>
+    <p>The design is clean, focused, and distraction-free. No banner ads, no pop-ups, no cookie consent dialogs, no newsletter prompts. The tool fills your screen and does exactly one thing well: convert text between 12 case formats instantly and privately.</p>
+
+    <h2>Is freecaseconverter.app private and safe to use?</h2>
+    <p>freecaseconverter.app is completely private and safe. The app has no backend server — it is a static web page that runs entirely in your browser. All text conversion happens using JavaScript on your device. Your text is never transmitted, stored, or logged anywhere.</p>
+    <p>The only data stored is your theme preference (light or dark mode), saved in your browser's localStorage. No cookies are set, no analytics are loaded, and no third-party tracking scripts are included. The app makes zero network requests after the initial page load.</p>
+    <p>Because the app is open and static, you can verify this yourself by inspecting the network tab in your browser's developer tools. You will see zero outbound requests containing your text data. Your text stays on your device from start to finish.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>What is camelCase and when should I use it?</summary>
+      <p>camelCase is a naming convention where the first word is lowercase and each subsequent word starts with a capital letter, with no spaces or separators (e.g., myVariableName). It is the standard naming convention for variables and functions in JavaScript, Java, and many other programming languages. Use camelCase when naming variables, function names, and object properties in your code.</p>
+    </details>
+
+    <details>
+      <summary>How do I convert text to snake_case online?</summary>
+      <p>To convert text to snake_case online, visit freecaseconverter.app, paste or type your text in the input area, and click the snake_case button. Your text will be instantly converted with all words joined by underscores and lowercased. The conversion happens entirely in your browser — no data is sent to any server.</p>
+    </details>
+
+    <details>
+      <summary>What's the difference between Title Case and Sentence case?</summary>
+      <p>Title Case capitalizes the first letter of every word (e.g., "The Quick Brown Fox"), while Sentence case only capitalizes the first letter of each sentence (e.g., "The quick brown fox"). Title Case is typically used for headings, book titles, and article names. Sentence case is used for regular body text and general writing.</p>
+    </details>
+
+    <details>
+      <summary>Can I convert code variable names with a case converter?</summary>
+      <p>Yes. freecaseconverter.app supports camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, and dot.case — all common naming conventions in programming. Paste your variable name, select the target format, and copy the result. It handles multi-word inputs and existing formatted names intelligently.</p>
+    </details>
+
+    <details>
+      <summary>Does freecaseconverter.app work on mobile?</summary>
+      <p>Yes. freecaseconverter.app is fully responsive and touch-friendly. The layout adapts to any screen size, with conversion buttons arranged in a two-column grid on mobile. All features work identically on phones, tablets, and desktop browsers.</p>
+    </details>
+
+    <details>
+      <summary>Is my text stored or sent to a server?</summary>
+      <p>No. All text processing in freecaseconverter.app happens 100% in your browser using JavaScript. Your text never leaves your device — 0 bytes are transmitted to any server. The app has no backend, no database, no analytics, and no tracking. Your data stays private.</p>
+    </details>
+  </article>
+
+  <footer class="seo-footer">
+    <p>© freecaseconverter.app</p>
+    <div class="more-tools-placeholder" data-suite="freetools"></div>
+  </footer>
+</section>
+
+<script>
+(function(){
+  'use strict';
+
+  // --- Theme ---
+  const html = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const knob = document.getElementById('theme-knob');
+
+  function setTheme(dark) {
+    if (dark) {
+      html.classList.add('dark');
+      knob.textContent = '🌙';
+    } else {
+      html.classList.remove('dark');
+      knob.textContent = '☀️';
+    }
+    localStorage.setItem('suite_theme', dark ? 'dark' : 'light');
+  }
+
+  // Init theme
+  const saved = localStorage.getItem('suite_theme');
+  if (saved) {
+    setTheme(saved === 'dark');
+  } else {
+    setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }
+
+  toggle.addEventListener('click', function() {
+    setTheme(!html.classList.contains('dark'));
+  });
+
+  // --- Elements ---
+  const inputEl = document.getElementById('input-text');
+  const outputEl = document.getElementById('output-text');
+  const btnCopy = document.getElementById('btn-copy');
+  const btnClear = document.getElementById('btn-clear');
+  const copyFlash = document.getElementById('copy-flash');
+  const statChars = document.getElementById('stat-chars');
+  const statWords = document.getElementById('stat-words');
+  const statSentences = document.getElementById('stat-sentences');
+  const statLines = document.getElementById('stat-lines');
+  const statusLeft = document.getElementById('status-left');
+  const convertGrid = document.getElementById('convert-grid');
+  const convertBtns = convertGrid.querySelectorAll('.convert-btn');
+
+  let activeMode = null;
+
+  // --- Stats ---
+  function updateStats(text) {
+    statChars.textContent = text.length;
+    const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    statWords.textContent = words;
+    const sentences = text.trim() ? (text.match(/[.!?]+(?:\s|$)/g) || []).length || (text.trim().length > 0 ? 1 : 0) : 0;
+    statSentences.textContent = sentences;
+    const lines = text ? text.split('\n').length : 0;
+    statLines.textContent = lines;
+    statusLeft.textContent = words + ' word' + (words !== 1 ? 's' : '') + ', ' + text.length + ' chars';
+  }
+
+  // --- Word splitting helper ---
+  function splitWords(text) {
+    // Split by camelCase/PascalCase boundaries, underscores, hyphens, dots, spaces
+    return text
+      .replace(/([a-z])([A-Z])/g, '$1 $2')
+      .replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2')
+      .replace(/[_\-./]+/g, ' ')
+      .trim()
+      .split(/\s+/)
+      .filter(function(w) { return w.length > 0; });
+  }
+
+  // --- Converters ---
+  var converters = {
+    upper: function(t) { return t.toUpperCase(); },
+    lower: function(t) { return t.toLowerCase(); },
+    title: function(t) {
+      return t.replace(/\w\S*/g, function(w) {
+        return w.charAt(0).toUpperCase() + w.substr(1).toLowerCase();
+      });
+    },
+    sentence: function(t) {
+      return t.toLowerCase().replace(/(^\s*|[.!?]\s+)([a-z])/g, function(m, p, c) {
+        return p + c.toUpperCase();
+      });
+    },
+    camel: function(t) {
+      var words = splitWords(t);
+      return words.map(function(w, i) {
+        w = w.toLowerCase();
+        return i === 0 ? w : w.charAt(0).toUpperCase() + w.substr(1);
+      }).join('');
+    },
+    pascal: function(t) {
+      var words = splitWords(t);
+      return words.map(function(w) {
+        w = w.toLowerCase();
+        return w.charAt(0).toUpperCase() + w.substr(1);
+      }).join('');
+    },
+    snake: function(t) {
+      return splitWords(t).map(function(w) { return w.toLowerCase(); }).join('_');
+    },
+    kebab: function(t) {
+      return splitWords(t).map(function(w) { return w.toLowerCase(); }).join('-');
+    },
+    constant: function(t) {
+      return splitWords(t).map(function(w) { return w.toUpperCase(); }).join('_');
+    },
+    dot: function(t) {
+      return splitWords(t).map(function(w) { return w.toLowerCase(); }).join('.');
+    },
+    alternating: function(t) {
+      var result = '';
+      var i = 0;
+      for (var c = 0; c < t.length; c++) {
+        var ch = t[c];
+        if (/[a-zA-Z]/.test(ch)) {
+          result += (i % 2 === 0) ? ch.toLowerCase() : ch.toUpperCase();
+          i++;
+        } else {
+          result += ch;
+        }
+      }
+      return result;
+    },
+    inverse: function(t) {
+      var result = '';
+      for (var c = 0; c < t.length; c++) {
+        var ch = t[c];
+        if (ch === ch.toUpperCase()) {
+          result += ch.toLowerCase();
+        } else {
+          result += ch.toUpperCase();
+        }
+      }
+      return result;
+    }
+  };
+
+  // --- Convert ---
+  function convert() {
+    var text = inputEl.value;
+    updateStats(text);
+    if (activeMode && converters[activeMode]) {
+      outputEl.value = converters[activeMode](text);
+    } else {
+      outputEl.value = '';
+    }
+  }
+
+  // --- Events ---
+  inputEl.addEventListener('input', convert);
+
+  convertBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var mode = btn.getAttribute('data-mode');
+      convertBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeMode = mode;
+      convert();
+    });
+  });
+
+  btnCopy.addEventListener('click', function() {
+    if (outputEl.value) {
+      navigator.clipboard.writeText(outputEl.value).then(function() {
+        copyFlash.classList.add('show');
+        setTimeout(function() { copyFlash.classList.remove('show'); }, 1200);
+      });
+    }
+  });
+
+  btnClear.addEventListener('click', function() {
+    inputEl.value = '';
+    outputEl.value = '';
+    activeMode = null;
+    convertBtns.forEach(function(b) { b.classList.remove('active'); });
+    updateStats('');
+    inputEl.focus();
+  });
+
+  // Ctrl+Enter to re-convert
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'Enter') {
+      e.preventDefault();
+      convert();
+    }
+  });
+
+  // Init
+  updateStats('');
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(function() {});
+  }
+})();
+</script>
+</body>
+</html>

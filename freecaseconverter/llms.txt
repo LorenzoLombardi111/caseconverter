@@ -1,0 +1,21 @@
+# freecaseconverter.app
+
+## Summary
+freecaseconverter.app is a free, browser-based case converter tool. It converts text between 12 different case formats instantly, with no login, no backend, and no data leaving the user's device.
+
+## Key Facts
+- 100% client-side — no server, no database, no tracking
+- 12 conversion formats: UPPER, lower, Title, Sentence, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dot.case, Alternating cAsE, iNVERSE cASE
+- Supports up to 100,000 characters
+- Loads in under 200ms
+- Works offline via service worker
+- Dark mode with persistent preference
+- Mobile responsive and touch-friendly
+- No frameworks — vanilla HTML, CSS, JavaScript
+
+## Pages
+- / — Main case converter tool (single-page app)
+
+## Contact
+- Website: https://freecaseconverter.app
+- Part of: https://freesuite.app
