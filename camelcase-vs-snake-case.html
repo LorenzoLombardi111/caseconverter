@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>camelCase vs snake_case: When to Use Each (With Examples) | freecaseconverter.app</title>
+<meta name="description" content="camelCase vs snake_case — learn when to use each format with real code examples in JavaScript, Python, and CSS. Clear recommendations by use case.">
+<link rel="canonical" href="https://freecaseconverter.app/camelcase-vs-snake-case.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#faf9f6">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="camelCase vs snake_case: When to Use Each (With Examples) | freecaseconverter.app">
+<meta property="og:description" content="camelCase vs snake_case — learn when to use each format with real code examples in JavaScript, Python, and CSS. Clear recommendations by use case.">
+<meta property="og:image" content="https://freecaseconverter.app/og-image.svg">
+<meta property="og:url" content="https://freecaseconverter.app/camelcase-vs-snake-case.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="camelCase vs snake_case: When to Use Each (With Examples) | freecaseconverter.app">
+<meta name="twitter:description" content="camelCase vs snake_case — learn when to use each format with real code examples in JavaScript, Python, and CSS.">
+<meta name="twitter:image" content="https://freecaseconverter.app/og-image.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I use camelCase or snake_case?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the language. Use camelCase for JavaScript, Java, TypeScript, and Swift variables and functions. Use snake_case for Python, Ruby, Rust, and PHP. Always follow the dominant convention of the language you are working in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is more readable, camelCase or snake_case?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research suggests snake_case is slightly more readable because underscores provide clear word boundaries. However, readability largely comes from familiarity. JavaScript developers read camelCase fluently, just as Python developers read snake_case without effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I mix camelCase and snake_case in the same project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mixing naming conventions within the same layer of code is generally discouraged as it creates inconsistency. However, it is common at API boundaries — for example, a JavaScript frontend using camelCase that communicates with a Python backend using snake_case. Many serialization libraries handle this conversion automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do style guides say about camelCase vs snake_case?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google's JavaScript style guide and Airbnb's style guide mandate camelCase for variables and functions. Python's PEP 8 mandates snake_case. Rust's compiler warns on non-snake_case function names. Each language has a clear community consensus."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://freecaseconverter.app/" },
+    { "@type": "ListItem", "position": 2, "name": "camelCase vs snake_case", "item": "https://freecaseconverter.app/camelcase-vs-snake-case.html" }
+  ]
+}
+</script>
+<style>
+:root { --bg: #faf9f6; --surface: #f4f2ee; --border: #e8e4dd; --text-primary: #1a1917; --text-secondary: #6b6760; --text-muted: #9e9b96; --accent: #C49A2A; --accent-hover: #A8831F; --accent-text: #ffffff; --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04); }
+html.dark { --bg: #141412; --surface: #1e1c1a; --border: #2e2b27; --text-primary: #f0ede8; --text-secondary: #9e9b96; --text-muted: #6b6760; --accent: #D4A835; --accent-hover: #C49A2A; --accent-text: #ffffff; --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2); }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 15px; line-height: 1.6; }
+body { font-family: 'Lora', serif; background: var(--bg); color: var(--text-primary); transition: background 0.15s ease, color 0.15s ease; }
+header { height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid var(--border); background: var(--bg); }
+.header-logo { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; color: var(--accent); text-decoration: none; }
+.theme-toggle { position: relative; width: 48px; height: 26px; border-radius: 13px; border: 1px solid var(--border); background: var(--surface); cursor: pointer; display: flex; align-items: center; padding: 0 4px; }
+.theme-toggle .knob { width: 18px; height: 18px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 10px; transition: transform 0.15s ease; }
+html.dark .theme-toggle .knob { transform: translateX(22px); }
+main { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
+.breadcrumb { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+h1 { font-family: 'Lora', serif; font-size: 2rem; font-weight: 700; margin-bottom: 24px; line-height: 1.3; }
+h2 { font-family: 'Lora', serif; font-size: 1.4rem; font-weight: 600; margin-top: 48px; margin-bottom: 16px; }
+p { margin-bottom: 16px; color: var(--text-secondary); line-height: 1.7; }
+pre { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto; margin-bottom: 16px; font-size: 13px; line-height: 1.5; }
+code { font-family: monospace; font-size: 0.93em; }
+.comparison-table { width: 100%; border-collapse: collapse; border: 1px solid var(--border); margin-bottom: 16px; }
+.comparison-table thead th { background: var(--surface); font-family: 'DM Sans', sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; padding: 12px 16px; text-align: left; border: 1px solid var(--border); }
+.comparison-table tbody td { padding: 12px 16px; border: 1px solid var(--border); font-size: 14px; }
+.comparison-table tbody tr:nth-child(odd) { background: var(--bg); }
+.comparison-table tbody tr:nth-child(even) { background: var(--surface); }
+details.faq-item { margin-bottom: 12px; border: 1px solid var(--border); border-radius: 10px; padding: 16px; background: var(--surface); }
+details.faq-item summary { font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; color: var(--text-primary); cursor: pointer; }
+details.faq-item p { margin-top: 12px; margin-bottom: 0; }
+.cta-button { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 8px 16px; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; text-decoration: none; transition: all 0.15s ease; }
+.cta-button:hover { background: var(--accent-hover); }
+.related-links { font-family: 'DM Sans', sans-serif; font-size: 13px; }
+.related-links a { color: var(--accent); text-decoration: none; display: block; margin-bottom: 8px; }
+.suite-badge { position: fixed; bottom: 16px; right: 24px; font-family: 'DM Sans', sans-serif; font-size: 11px; color: var(--text-muted); padding: 4px 8px; z-index: 10; }
+footer { border-top: 1px solid var(--border); margin-top: 48px; padding-top: 24px; font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--text-muted); text-align: center; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+</style>
+</head>
+<body>
+<header>
+  <a href="/" class="header-logo">freecaseconverter.app</a>
+  <div class="theme-toggle" id="themeToggle" role="button" aria-label="Toggle theme">
+    <div class="knob" id="themeKnob"></div>
+  </div>
+</header>
+<main>
+  <nav class="breadcrumb"><a href="/">Home</a> &gt; camelCase vs snake_case</nav>
+
+  <h1>camelCase vs snake_case: When to Use Each (With Examples)</h1>
+
+  <p>camelCase and snake_case are the two most common naming conventions in programming. camelCase joins words by capitalizing the first letter of each subsequent word (<code>myVariableName</code>), while snake_case joins words with underscores and keeps everything lowercase (<code>my_variable_name</code>). Choosing between them is not a matter of personal preference — it depends almost entirely on the programming language and ecosystem you are working in.</p>
+
+  <p>The distinction matters because consistency is one of the most important qualities of maintainable code. When every developer on a team follows the same naming convention, code reviews are faster, refactoring is easier, and new contributors can onboard quickly. Using camelCase in a Python project or snake_case in a JavaScript project creates friction and signals unfamiliarity with the ecosystem.</p>
+
+  <h2>Quick Comparison</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Aspect</th>
+        <th>camelCase</th>
+        <th>snake_case</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Format</td><td><code>myVariableName</code></td><td><code>my_variable_name</code></td></tr>
+      <tr><td>Word separator</td><td>Capital letter</td><td>Underscore</td></tr>
+      <tr><td>First letter</td><td>Lowercase</td><td>Lowercase</td></tr>
+      <tr><td>Primary languages</td><td>JavaScript, Java, TypeScript, Swift</td><td>Python, Ruby, Rust, PHP</td></tr>
+      <tr><td>Readability</td><td>Good (compact)</td><td>Good (clear separators)</td></tr>
+      <tr><td>Typing speed</td><td>Faster (no underscore key)</td><td>Slightly slower</td></tr>
+      <tr><td>Length</td><td>Shorter</td><td>Longer (underscores add characters)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>When to Use camelCase</h2>
+
+  <p>camelCase is the standard for JavaScript, TypeScript, Java, Swift, and Kotlin. Use it for variable names, function names, method names, and object property keys in these languages. JSON data typically uses camelCase keys when the API serves JavaScript clients.</p>
+
+  <p><strong>JavaScript example:</strong></p>
+  <pre><code>// camelCase for variables, functions, and object properties
+const userName = "Alice";
+const maxRetryCount = 3;
+
+function getUserProfile(userId) {
+  return fetch(`/api/users/${userId}`)
+    .then(response => response.json());
+}
+
+const userSettings = {
+  darkMode: true,
+  fontSize: 14,
+  autoSave: true
+};</code></pre>
+
+  <h2>When to Use snake_case</h2>
+
+  <p>snake_case is the standard for Python, Ruby, Rust, and PHP. Python's PEP 8 style guide explicitly mandates snake_case for all variable names, function names, and method names. Rust's compiler emits warnings if you use camelCase for function names. Ruby's community convention follows the same rule.</p>
+
+  <p><strong>Python example:</strong></p>
+  <pre><code># snake_case for variables, functions, and methods
+user_name = "Alice"
+max_retry_count = 3
+
+def get_user_profile(user_id):
+    return database.query(user_id)
+
+user_settings = {
+    "dark_mode": True,
+    "font_size": 14,
+    "auto_save": True
+}</code></pre>
+
+  <h2>CSS Uses Neither — It Uses kebab-case</h2>
+
+  <p>CSS has its own convention: kebab-case (words separated by hyphens). CSS class names, custom properties, and data attributes all use kebab-case. Neither camelCase nor snake_case is standard in CSS.</p>
+
+  <pre><code>/* CSS uses kebab-case, not camelCase or snake_case */
+.user-profile-card {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  max-width: 400px;
+}</code></pre>
+
+  <h2>Recommendation Table</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Use Case</th>
+        <th>Recommended Format</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>JavaScript variables and functions</td><td>camelCase</td></tr>
+      <tr><td>Python variables and functions</td><td>snake_case</td></tr>
+      <tr><td>Java methods and fields</td><td>camelCase</td></tr>
+      <tr><td>Ruby methods and variables</td><td>snake_case</td></tr>
+      <tr><td>Rust functions and variables</td><td>snake_case</td></tr>
+      <tr><td>TypeScript variables and functions</td><td>camelCase</td></tr>
+      <tr><td>JSON keys (JavaScript API)</td><td>camelCase</td></tr>
+      <tr><td>Database column names</td><td>snake_case</td></tr>
+      <tr><td>CSS class names</td><td>kebab-case</td></tr>
+      <tr><td>URL slugs</td><td>kebab-case</td></tr>
+      <tr><td>Environment variables</td><td>CONSTANT_CASE</td></tr>
+      <tr><td>Class names (any language)</td><td>PascalCase</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The Bottom Line</h2>
+
+  <p>There is no universally "better" format. The right choice is always the one that matches your language's conventions. Use camelCase in JavaScript, snake_case in Python, and kebab-case in CSS. When you work across languages — for example, a JavaScript frontend calling a Python API — convert at the boundary. Libraries like <code>humps</code> (JavaScript) and <code>pydantic</code> (Python) handle this transformation automatically.</p>
+
+  <p style="margin-top: 32px;"><a href="https://freecaseconverter.app/" class="cta-button">Convert between camelCase and snake_case free &rarr;</a></p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details class="faq-item">
+    <summary>Should I use camelCase or snake_case?</summary>
+    <p>It depends on the language. Use camelCase for JavaScript, Java, TypeScript, and Swift variables and functions. Use snake_case for Python, Ruby, Rust, and PHP. Always follow the dominant convention of the language you are working in.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Which is more readable, camelCase or snake_case?</summary>
+    <p>Research suggests snake_case is slightly more readable because underscores provide clear word boundaries. However, readability largely comes from familiarity. JavaScript developers read camelCase fluently, just as Python developers read snake_case without effort.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can I mix camelCase and snake_case in the same project?</summary>
+    <p>Mixing naming conventions within the same layer of code is generally discouraged as it creates inconsistency. However, it is common at API boundaries — for example, a JavaScript frontend using camelCase that communicates with a Python backend using snake_case. Many serialization libraries handle this conversion automatically.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>What do style guides say about camelCase vs snake_case?</summary>
+    <p>Google's JavaScript style guide and Airbnb's style guide mandate camelCase for variables and functions. Python's PEP 8 mandates snake_case. Rust's compiler warns on non-snake_case function names. Each language has a clear community consensus.</p>
+  </details>
+
+  <h2>More Free Tools</h2>
+
+  <div class="related-links">
+    <a href="./index.html">Free Case Converter &mdash; Home</a>
+    <a href="./camelcase-converter.html">camelCase Converter</a>
+    <a href="./snake-case-converter.html">snake_case Converter</a>
+    <a href="./pascal-case-converter.html">PascalCase Converter</a>
+    <a href="./kebab-case-converter.html">kebab-case Converter</a>
+  </div>
+
+  <footer>&copy; freecaseconverter.app</footer>
+</main>
+
+<div class="suite-badge">by freesuite.app</div>
+
+<script>
+(function() {
+  var toggle = document.getElementById('themeToggle');
+  var knob = document.getElementById('themeKnob');
+  var html = document.documentElement;
+  function applyTheme(dark) {
+    if (dark) { html.classList.add('dark'); knob.textContent = '\uD83C\uDF19'; }
+    else { html.classList.remove('dark'); knob.textContent = '\u2600\uFE0F'; }
+  }
+  var stored = localStorage.getItem('suite_theme');
+  if (stored === 'dark') applyTheme(true);
+  else if (stored === 'light') applyTheme(false);
+  else applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  toggle.addEventListener('click', function() {
+    var isDark = html.classList.contains('dark');
+    applyTheme(!isDark);
+    localStorage.setItem('suite_theme', isDark ? 'light' : 'dark');
+  });
+})();
+</script>
+</body>
+</html>

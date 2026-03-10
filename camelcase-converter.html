@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>camelCase Converter Online — Free Instant Tool | freecaseconverter.app</title>
+<meta name="description" content="Convert text to camelCase online for free. Paste your text and get instant camelCase output — no login, runs in your browser.">
+<link rel="canonical" href="https://freecaseconverter.app/camelcase-converter.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#faf9f6">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="camelCase Converter Online — Free Instant Tool | freecaseconverter.app">
+<meta property="og:description" content="Convert text to camelCase online for free. Paste your text and get instant camelCase output — no login, runs in your browser.">
+<meta property="og:image" content="https://freecaseconverter.app/og-image.svg">
+<meta property="og:url" content="https://freecaseconverter.app/camelcase-converter.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="camelCase Converter Online — Free Instant Tool | freecaseconverter.app">
+<meta name="twitter:description" content="Convert text to camelCase online for free. Paste your text and get instant camelCase output — no login, runs in your browser.">
+<meta name="twitter:image" content="https://freecaseconverter.app/og-image.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is camelCase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "camelCase is a naming convention where the first word is lowercase and each subsequent word starts with an uppercase letter, with no spaces or separators. For example, 'my variable name' becomes 'myVariableName'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use camelCase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "camelCase is the standard convention for naming variables and functions in JavaScript, Java, TypeScript, and Swift. It is also commonly used for JSON property names and object keys."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert text to camelCase online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visit freecaseconverter.app, paste your text in the input field, and click the camelCase button. The conversion happens instantly in your browser with no server upload required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between camelCase and PascalCase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "camelCase starts with a lowercase letter (myVariableName), while PascalCase starts with an uppercase letter (MyVariableName). camelCase is used for variables and functions; PascalCase is used for class names and React components."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://freecaseconverter.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "camelCase Converter",
+      "item": "https://freecaseconverter.app/camelcase-converter.html"
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #faf9f6;
+  --surface: #f4f2ee;
+  --border: #e8e4dd;
+  --text-primary: #1a1917;
+  --text-secondary: #6b6760;
+  --text-muted: #9e9b96;
+  --accent: #C49A2A;
+  --accent-hover: #A8831F;
+  --accent-text: #ffffff;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+}
+html.dark {
+  --bg: #141412;
+  --surface: #1e1c1a;
+  --border: #2e2b27;
+  --text-primary: #f0ede8;
+  --text-secondary: #9e9b96;
+  --text-muted: #6b6760;
+  --accent: #D4A835;
+  --accent-hover: #C49A2A;
+  --accent-text: #ffffff;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 15px; line-height: 1.6; }
+body {
+  font-family: 'Lora', serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+.header-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.theme-toggle {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+.theme-toggle .knob {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  transition: transform 0.15s ease;
+  transform: translateX(0);
+}
+html.dark .theme-toggle .knob {
+  transform: translateX(22px);
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+.breadcrumb {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+code {
+  font-family: monospace;
+  font-size: 0.93em;
+}
+details.faq-item {
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--surface);
+}
+details.faq-item summary {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+details.faq-item p {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.cta-button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-text);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.cta-button:hover { background: var(--accent-hover); }
+.related-links {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+}
+.related-links a {
+  color: var(--accent);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+.suite-badge {
+  position: fixed;
+  bottom: 16px;
+  right: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 4px 8px;
+  z-index: 10;
+}
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+</style>
+</head>
+<body>
+<header>
+  <a href="/" class="header-logo">freecaseconverter.app</a>
+  <div class="theme-toggle" id="themeToggle" role="button" aria-label="Toggle theme">
+    <div class="knob" id="themeKnob"></div>
+  </div>
+</header>
+<main>
+  <nav class="breadcrumb"><a href="/">Home</a> &gt; camelCase Converter</nav>
+
+  <h1>camelCase Converter Online — Free Instant Tool</h1>
+
+  <p>camelCase is one of the most widely used naming conventions in software development. In camelCase, the first word is written in lowercase and every subsequent word begins with a capital letter, with no spaces, hyphens, or underscores between them. The name comes from the way the capital letters in the middle of a word resemble the humps of a camel. For example, the phrase "user first name" becomes <code>userFirstName</code> in camelCase.</p>
+
+  <p>camelCase is the default naming convention for variables and functions in JavaScript, TypeScript, Java, Swift, and Kotlin. It is also standard for JSON keys in most REST APIs and for property names in frontend frameworks like React and Vue. If you write code in any of these languages, you will encounter camelCase constantly. Adopting it consistently makes your code more readable and consistent with community standards.</p>
+
+  <h2>When to Use camelCase</h2>
+
+  <p>Use camelCase when naming local variables, function parameters, method names, and object properties in languages that follow this convention. In JavaScript, for instance, the community style guides from Airbnb and Google both mandate camelCase for variables and functions. Java follows the same convention for methods and fields. Using camelCase also helps distinguish variables from classes, which typically use PascalCase.</p>
+
+  <p>Outside of code, camelCase appears in product names, brand identifiers, and hashtags on social media. Wherever you need to join multiple words into a single token without spaces, camelCase provides a readable result.</p>
+
+  <h2>Code Examples</h2>
+
+  <p><strong>JavaScript</strong></p>
+  <pre><code>// camelCase for variables and functions
+const userName = "Alice";
+const itemCount = 42;
+
+function getUserProfile(userId) {
+  return fetch(`/api/users/${userId}`);
+}
+
+const orderTotal = calculateOrderTotal(cartItems);</code></pre>
+
+  <p><strong>Python</strong> (when interacting with JavaScript APIs or JSON)</p>
+  <pre><code># Python typically uses snake_case, but camelCase appears
+# when working with JSON data from JavaScript APIs
+import json
+
+data = json.loads(response.text)
+user_name = data["userName"]
+item_count = data["itemCount"]
+
+# Some Python libraries use camelCase in their APIs
+from unittest import TestCase
+class MyTest(TestCase):
+    def setUp(self):
+        self.maxDiff = None</code></pre>
+
+  <p><strong>Java</strong></p>
+  <pre><code>// camelCase is the standard for methods and variables in Java
+public class UserService {
+    private String userName;
+    private int loginCount;
+
+    public String getUserName() {
+        return this.userName;
+    }
+
+    public void incrementLoginCount() {
+        this.loginCount++;
+    }
+}</code></pre>
+
+  <p style="margin-top: 32px;"><a href="https://freecaseconverter.app/" class="cta-button">Try it free &rarr;</a></p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details class="faq-item">
+    <summary>What is camelCase?</summary>
+    <p>camelCase is a naming convention where the first word is lowercase and each subsequent word starts with an uppercase letter, with no spaces or separators. For example, "my variable name" becomes "myVariableName".</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>When should I use camelCase?</summary>
+    <p>camelCase is the standard convention for naming variables and functions in JavaScript, Java, TypeScript, and Swift. It is also commonly used for JSON property names and object keys.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>How do I convert text to camelCase online?</summary>
+    <p>Visit freecaseconverter.app, paste your text in the input field, and click the camelCase button. The conversion happens instantly in your browser with no server upload required.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>What is the difference between camelCase and PascalCase?</summary>
+    <p>camelCase starts with a lowercase letter (myVariableName), while PascalCase starts with an uppercase letter (MyVariableName). camelCase is used for variables and functions; PascalCase is used for class names and React components.</p>
+  </details>
+
+  <h2>More Free Tools</h2>
+
+  <div class="related-links">
+    <a href="./index.html">Free Case Converter &mdash; Home</a>
+    <a href="./snake-case-converter.html">snake_case Converter</a>
+    <a href="./pascal-case-converter.html">PascalCase Converter</a>
+    <a href="./kebab-case-converter.html">kebab-case Converter</a>
+    <a href="./camelcase-vs-snake-case.html">camelCase vs snake_case</a>
+  </div>
+
+  <footer>&copy; freecaseconverter.app</footer>
+</main>
+
+<div class="suite-badge">by freesuite.app</div>
+
+<script>
+(function() {
+  var toggle = document.getElementById('themeToggle');
+  var knob = document.getElementById('themeKnob');
+  var html = document.documentElement;
+
+  function applyTheme(dark) {
+    if (dark) {
+      html.classList.add('dark');
+      knob.textContent = '\uD83C\uDF19';
+    } else {
+      html.classList.remove('dark');
+      knob.textContent = '\u2600\uFE0F';
+    }
+  }
+
+  var stored = localStorage.getItem('suite_theme');
+  if (stored === 'dark') {
+    applyTheme(true);
+  } else if (stored === 'light') {
+    applyTheme(false);
+  } else {
+    applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }
+
+  toggle.addEventListener('click', function() {
+    var isDark = html.classList.contains('dark');
+    applyTheme(!isDark);
+    localStorage.setItem('suite_theme', isDark ? 'light' : 'dark');
+  });
+})();
+</script>
+</body>
+</html>
