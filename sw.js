@@ -1,9 +1,14 @@
-const CACHE_NAME = 'caseconverter-v1';
+const CACHE_NAME = 'caseconverter-v2';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/og-image.svg'
+  '/og-image.svg',
+  '/vs-convertcase.html',
+  '/vs-textconverter.html',
+  '/vs-capitalizemytitle.html',
+  '/case-converter-for-developers.html',
+  '/case-converter-for-writers.html'
 ];
 
 self.addEventListener('install', function(event) {
