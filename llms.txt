@@ -15,6 +15,11 @@ freecaseconverter.app is a free, browser-based case converter tool. It converts 
 
 ## Pages
 - / — Main case converter tool (single-page app)
+- /vs-convertcase.html — freecaseconverter.app vs ConvertCase: Free Alternative
+- /vs-textconverter.html — freecaseconverter.app vs TextConverter: Free Alternative
+- /vs-capitalizemytitle.html — freecaseconverter.app vs Capitalize My Title: Free Alternative
+- /case-converter-for-developers.html — Free Case Converter for Developers
+- /case-converter-for-writers.html — Free Case Converter for Writers
 
 ## Contact
 - Website: https://freecaseconverter.app
